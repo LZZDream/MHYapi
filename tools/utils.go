@@ -17,6 +17,13 @@ func Ifs[T any](a bool, b, c T) T {
 	return c
 }
 
+func IfsError(a bool, b, c error) error {
+	if a {
+		return b
+	}
+	return c
+}
+
 //RandString 生成随机长度字符串
 func RandString(strlen int) string {
 	var alphanum = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
