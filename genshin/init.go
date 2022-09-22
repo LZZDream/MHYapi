@@ -1,9 +1,9 @@
 package genshin
 
 import (
-	"github.com/Huiyicc/mhyapi/cookies"
-	"github.com/Huiyicc/mhyapi/define"
-	"github.com/Huiyicc/mhyapi/tools"
+	"github.com/LZZDream/MHYapi/cookies"
+	"github.com/LZZDream/MHYapi/define"
+	"github.com/LZZDream/MHYapi/tools"
 	"math/rand"
 	"net/http"
 	"time"

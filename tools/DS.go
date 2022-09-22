@@ -2,7 +2,7 @@ package tools
 
 import (
 	"fmt"
-	"github.com/Huiyicc/mhyapi/define"
+	"github.com/LZZDream/MHYapi/define"
 	"math/rand"
 	"time"
 )

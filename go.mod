@@ -1,4 +1,4 @@
-module github.com/Huiyicc/mhyapi
+module github.com/LZZDream/MHYapi
 
 go 1.18
 

@@ -3,8 +3,8 @@ package genshin
 import (
 	"errors"
 	"fmt"
-	"github.com/Huiyicc/mhyapi/request"
-	"github.com/Huiyicc/mhyapi/tools"
+	"github.com/LZZDream/MHYapi/request"
+	"github.com/LZZDream/MHYapi/tools"
 	json "github.com/json-iterator/go"
 )
 
@@ -42,7 +42,7 @@ type spiralAbyssInfoResponse struct {
 
 // 验证器
 func (t *spiralAbyssInfoResponse) verify() error {
-	return tools.Ifs(t.Retcode == 0, nil, errors.New(t.Message))
+	return tools.IfsError(t.Retcode == 0, nil, errors.New(t.Message))
 }
 
 type SpiralAbyssInfo struct {

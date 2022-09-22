@@ -2,9 +2,9 @@ package genshin
 
 import (
 	"errors"
-	"github.com/Huiyicc/mhyapi/define"
-	"github.com/Huiyicc/mhyapi/request"
-	"github.com/Huiyicc/mhyapi/tools"
+	"github.com/LZZDream/MHYapi/define"
+	"github.com/LZZDream/MHYapi/request"
+	"github.com/LZZDream/MHYapi/tools"
 	json "github.com/json-iterator/go"
 )
 
