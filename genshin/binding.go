@@ -62,5 +62,5 @@ type updateBindInfoResponse struct {
 }
 
 func (t *updateBindInfoResponse) verify() error {
-	return tools.Ifs(t.Retcode == 0, nil, errors.New(t.Message))
+	return tools.IfsError(t.Retcode == 0, nil, errors.New(t.Message))
 }

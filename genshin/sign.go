@@ -88,7 +88,7 @@ type isSignResponse struct {
 
 //验证器
 func (t *isSignResponse) verify() error {
-	return tools.Ifs(t.Retcode == 0, nil, errors.New(t.Message))
+	return tools.IfsError(t.Retcode == 0, nil, errors.New(t.Message))
 }
 
 type SignInfo struct {
@@ -115,7 +115,7 @@ type signResponse struct {
 
 //验证器
 func (t *signResponse) verify() error {
-	return tools.Ifs(t.Retcode == 0, nil, errors.New(t.Message))
+	return tools.IfsError(t.Retcode == 0, nil, errors.New(t.Message))
 }
 
 type signRewardsListResponse struct {
@@ -137,5 +137,5 @@ type RewardInfo struct {
 
 //验证器
 func (t *signRewardsListResponse) verify() error {
-	return tools.Ifs(t.Retcode == 0, nil, errors.New(t.Message))
+	return tools.IfsError(t.Retcode == 0, nil, errors.New(t.Message))
 }

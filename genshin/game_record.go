@@ -30,7 +30,7 @@ func (t *GenShinCore) GameRecordIndex(gameID string) (*GameRecordIndexInfo, erro
 
 // 验证器
 func (t *gameRecordIndexResponse) verify() error {
-	return tools.Ifs(t.Retcode == 0, nil, errors.New(t.Message))
+	return tools.IfsError(t.Retcode == 0, nil, errors.New(t.Message))
 }
 
 type gameRecordIndexResponse struct {

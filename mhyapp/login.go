@@ -125,5 +125,5 @@ type loginBRequest struct {
 
 //验证器
 func (t *loginBRequest) verify() error {
-	return tools.Ifs(t.Retcode == 0, nil, errors.New(t.Message))
+	return tools.IfsError(t.Retcode == 0, nil, errors.New(t.Message))
 }
